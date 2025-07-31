@@ -79,7 +79,11 @@ const MethodologySection = () => {
                 </CardHeader>
                 
                 <CardContent className="relative z-10 text-center">
-                  <p className="text-muted-foreground mb-4">{step.description}</p>
+                  <p className="text-muted-foreground mb-4">
+                    {step.number === "01" 
+                      ? "Captamos leads qualificados através de estratégias orgânicas (SEO, conteúdo) e campanhas de anúncios pagos otimizadas para seu público ideal."
+                      : step.description}
+                  </p>
                   
                   {/* AI Feature Badge */}
                   <div className="bg-primary/10 text-primary px-3 py-2 rounded-full text-sm font-medium">
