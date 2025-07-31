@@ -1,48 +1,56 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { TrendingUp, Search, Settings, MessageSquare, Users, ArrowRight } from "lucide-react";
+import { Clock, Brain, MessageSquare, Settings, Zap, ArrowRight, Users, CheckCircle } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: TrendingUp,
-      title: "Tráfego Pago",
-      subtitle: "Google Ads & Meta Ads",
-      description: "Campanhas otimizadas com IA que geram leads qualificados e reduzem o custo por aquisição em até 60%.",
-      features: ["ROI médio de 400%", "Otimização diária", "Relatórios em tempo real"],
-      badge: "Mais Popular"
+      icon: Clock,
+      title: "Atendimento 24/7",
+      subtitle: "Nunca Para de Trabalhar",
+      description: "Seu agente virtual atende clientes 24 horas por dia, 7 dias por semana, 365 dias por ano. Nunca descansa, não tira férias e não fica doente.",
+      features: ["Disponível 24/7/365", "Zero pausas ou intervalos", "Sem feriados ou férias"],
+      badge: "Essencial"
     },
     {
-      icon: Search,
-      title: "SEO & Conteúdo",
-      subtitle: "Rankeamento Orgânico",
-      description: "Estratégias de SEO e criação de conteúdo que posicionam sua marca no topo do Google.",
-      features: ["Aumento de 300% no tráfego", "Conteúdo otimizado", "Autoridade digital"],
+      icon: Brain,
+      title: "Conhecimento Total",
+      subtitle: "Sabe Tudo Sobre Sua Empresa",
+      description: "Treinado com todas as informações da sua empresa: produtos, serviços, preços, políticas e procedimentos.",
+      features: ["Base de conhecimento completa", "Respostas precisas", "Informações sempre atualizadas"],
+      badge: "Inteligente"
+    },
+    {
+      icon: MessageSquare,
+      title: "Conversas Naturais",
+      subtitle: "Parece um Humano Real",
+      description: "Utiliza IA avançada para manter conversas naturais e envolventes, criando uma experiência indistinguível de um atendente humano.",
+      features: ["Linguagem natural", "Empatia artificial", "Personalização total"],
+      badge: null
+    },
+    {
+      icon: Zap,
+      title: "Respostas Instantâneas",
+      subtitle: "Zero Tempo de Espera",
+      description: "Responde imediatamente a todas as mensagens, eliminando filas de espera e aumentando a satisfação do cliente.",
+      features: ["Resposta em milissegundos", "Sem tempo de espera", "Atendimento simultâneo ilimitado"],
       badge: null
     },
     {
       icon: Settings,
-      title: "Integrações & Automação",
-      subtitle: "ClickUp + Kommo CRM",
-      description: "Automatize processos e integre ferramentas para uma gestão mais eficiente e produtiva.",
-      features: ["Economia de 20h/semana", "Processos automatizados", "Integração completa"],
+      title: "Integração Completa",
+      subtitle: "Conecta com Seus Sistemas",
+      description: "Integra perfeitamente com CRM, sistemas de vendas e ferramentas de gestão para um atendimento completo e eficiente.",
+      features: ["Integração com CRM", "Sincronização automática", "Relatórios detalhados"],
       badge: null
     },
     {
-      icon: MessageSquare,
-      title: "Agentes de IA para WhatsApp",
-      subtitle: "Atendimento 24/7",
-      description: "Chatbots inteligentes que qualificam leads e atendem clientes automaticamente.",
-      features: ["Atendimento 24/7", "Qualificação automática", "Taxa de conversão +250%"],
-      badge: "Novidade"
-    },
-    {
-      icon: Users,
-      title: "Consultoria Estratégica",
-      subtitle: "Mentoria Personalizada",
-      description: "Atendimento direto com os sócios para estratégias customizadas e crescimento acelerado.",
-      features: ["Atendimento humanizado", "Estratégias personalizadas", "Resultados garantidos"],
-      badge: null
+      icon: CheckCircle,
+      title: "Qualificação Inteligente",
+      subtitle: "Identifica Clientes Prontos",
+      description: "Qualifica automaticamente leads, identifica intenção de compra e direciona oportunidades quentes para sua equipe.",
+      features: ["Lead scoring automático", "Identificação de intenção", "Priorização inteligente"],
+      badge: "Vendas"
     }
   ];
 
@@ -52,13 +60,13 @@ const ServicesSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Nossos Serviços de
+            Por Que Nosso Agente é
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              {" "}Alto Impacto
+              {" "}Superior
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Soluções completas para acelerar o crescimento da sua empresa com tecnologia de ponta e expertise comprovada.
+            Descubra as vantagens exclusivas do agente de IA mais avançado do Brasil para atendimento no WhatsApp.
           </p>
         </div>
 
@@ -102,13 +110,13 @@ const ServicesSection = () => {
         {/* Bottom CTA */}
         <div className="text-center">
           <p className="text-lg text-muted-foreground mb-6">
-            Quer saber como esses serviços podem transformar seu negócio?
+            Pronto para ter o melhor agente de WhatsApp trabalhando para você?
           </p>
           <button 
             className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
             onClick={() => window.open('https://wa.link/93qb83', '_blank')}
           >
-            Conversar com Especialista
+            Testar Agente Grátis
             <ArrowRight className="w-5 h-5" />
           </button>
         </div>
