@@ -167,7 +167,7 @@ const ResultsSection = () => {
           
           <button 
             className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center gap-2 shadow-lg"
-            onClick={() => window.open('https://wa.link/93qb83', '_blank')}
+            onClick={() => window.open('https://wa.me/553174547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20agente%20de%20IA', '_blank')}
           >
             Agendar Consultoria Gratuita
             <ArrowRight className="w-5 h-5" />

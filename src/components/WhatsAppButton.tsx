@@ -24,7 +24,7 @@ const WhatsAppButton = () => {
   }, []);
 
   const handleClick = () => {
-    window.open('https://wa.link/93qb83', '_blank');
+    window.open('https://wa.me/5531984005700?text=Ol%C3%A1%21%20Vim%20da%20p%C3%A1gina%20do%20agente%20de%20IA%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es', '_blank');
   };
 
   if (!isVisible) return null;

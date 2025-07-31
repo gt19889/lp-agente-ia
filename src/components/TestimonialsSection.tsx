@@ -118,7 +118,7 @@ const TestimonialsSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-3 rounded-lg font-medium transition-colors" onClick={() => window.open('https://wa.link/93qb83', '_blank')}>
+            <button className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-3 rounded-lg font-medium transition-colors" onClick={() => window.open('https://wa.me/553174547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20agente%20de%20IA', '_blank')}>
               Quero Meus Resultados Também
             </button>
             <button className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-lg font-medium transition-all" onClick={() => window.open('https://www.google.com/search?q=gt+gestao+digital+avaliacoes', '_blank')}>
