@@ -8,24 +8,24 @@ const MethodologySection = () => {
       icon: Target,
       number: "01",
       title: "Captar",
-      description: "Identificamos e atraímos seu público ideal através de campanhas de tráfego pago otimizadas e SEO estratégico.",
-      aiFeature: "IA para segmentação precisa de audiências",
+      description: "A GT Digital atrai seu público ideal através de SEO estratégico e campanhas de tráfego pago otimizadas para gerar leads qualificados.",
+      aiFeature: "Estratégias de captação da GT Digital",
       color: "from-red-500 to-orange-500"
     },
     {
       icon: Users,
       number: "02", 
       title: "Engajar",
-      description: "Criamos relacionamento através de conteúdo relevante e automações inteligentes que nutrem leads continuamente.",
-      aiFeature: "Chatbots de IA para engajamento 24/7",
+      description: "O agente de IA faz o pré-atendimento, responde dúvidas frequentes e qualifica leads de forma inteligente e personalizada 24/7.",
+      aiFeature: "Agente de IA para pré-atendimento",
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: TrendingUp,
       number: "03",
       title: "Converter",
-      description: "Transformamos prospects em clientes com estratégias de conversão baseadas em dados e automação de vendas.",
-      aiFeature: "IA preditiva para otimizar conversões",
+      description: "O agente conduz o processo de venda diretamente ou direciona para um humano especializado ou página de checkout para finalizar.",
+      aiFeature: "IA de vendas inteligente",
       color: "from-green-500 to-emerald-500"
     },
     {
@@ -79,15 +79,11 @@ const MethodologySection = () => {
                 </CardHeader>
                 
                 <CardContent className="relative z-10 text-center">
-                  <p className="text-muted-foreground mb-4">
-                    {step.number === "01" 
-                      ? "Captamos leads qualificados através de estratégias orgânicas (SEO, conteúdo) e campanhas de anúncios pagos otimizadas para seu público ideal."
-                      : step.description}
-                  </p>
+                  <p className="text-muted-foreground mb-4">{step.description}</p>
                   
                   {/* AI Feature Badge */}
                   <div className="bg-primary/10 text-primary px-3 py-2 rounded-full text-sm font-medium">
-                    {step.number === "01" ? "IA faz a pré-venda" : step.aiFeature}
+                    {step.aiFeature}
                   </div>
                 </CardContent>
                 
