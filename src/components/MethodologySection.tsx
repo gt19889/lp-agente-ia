@@ -115,7 +115,7 @@ const MethodologySection = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">-60%</div>
-              <p className="text-sm text-muted-foreground">Redução no CAC</p>
+              <p className="text-sm text-muted-foreground">Redução no custo de aquisição</p>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">24/7</div>
