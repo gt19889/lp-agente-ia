@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart3, Target, Zap, MessageSquare, Clock, Brain } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/30 to-primary/5 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/30 to-primary/5 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
       <div className="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
@@ -63,7 +61,7 @@ const HeroSection = () => {
           
           {/* Trust indicators */}
           <div className="mt-12 text-sm text-muted-foreground">
-            <p className="mb-4">✅ Mais de 1.000 clientes satisfeitos</p>
+            <p className="mb-4">✅ Mais de 200 clientes satisfeitos</p>
             <div className="flex flex-wrap justify-center gap-6 opacity-60">
               <span className="bg-secondary px-3 py-1 rounded-md">WhatsApp Oficial</span>
               <span className="bg-secondary px-3 py-1 rounded-md">IA Avançada</span>
@@ -72,8 +70,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
