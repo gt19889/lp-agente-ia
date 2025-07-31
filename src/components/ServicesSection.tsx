@@ -38,10 +38,10 @@ const ServicesSection = () => {
     },
     {
       icon: Settings,
-      title: "Integração Completa",
-      subtitle: "Conecta com Seus Sistemas",
-      description: "Integra perfeitamente com CRM, sistemas de vendas e ferramentas de gestão para um atendimento completo e eficiente.",
-      features: ["Integração com CRM", "Sincronização automática", "Relatórios detalhados"],
+      title: "Personalização Total",
+      subtitle: "Agente Único da Sua Empresa",
+      description: "Configuramos o agente com a personalidade, tom de voz e conhecimento específico da sua empresa para atendimento personalizado.",
+      features: ["Tom de voz personalizado", "Conhecimento específico", "Respostas consistentes"],
       badge: null
     },
     {

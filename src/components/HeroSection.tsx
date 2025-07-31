@@ -67,12 +67,11 @@ const HeroSection = () => {
           
           {/* Trust indicators */}
           <div className="mt-12 text-sm text-muted-foreground">
-            <p className="mb-4">Integra com as principais plataformas:</p>
+            <p className="mb-4">✅ Mais de 1.000 clientes satisfeitos</p>
             <div className="flex flex-wrap justify-center gap-6 opacity-60">
-              <span className="bg-secondary px-3 py-1 rounded-md">WhatsApp Business</span>
-              <span className="bg-secondary px-3 py-1 rounded-md">OpenAI GPT</span>
-              <span className="bg-secondary px-3 py-1 rounded-md">Kommo CRM</span>
-              <span className="bg-secondary px-3 py-1 rounded-md">ClickUp</span>
+              <span className="bg-secondary px-3 py-1 rounded-md">WhatsApp Oficial</span>
+              <span className="bg-secondary px-3 py-1 rounded-md">IA Avançada</span>
+              <span className="bg-secondary px-3 py-1 rounded-md">Suporte 24/7</span>
             </div>
           </div>
         </div>
