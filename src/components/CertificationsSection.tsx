@@ -1,40 +1,49 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Award, Shield, Zap } from "lucide-react";
+
+// Import logos
+import googleAdsLogo from "@/assets/logos/google-ads-logo.png";
+import rdstationLogo from "@/assets/logos/rdstation-logo.png";
+import activecampaignLogo from "@/assets/logos/activecampaign-logo.png";
+import metaLogo from "@/assets/logos/meta-logo.png";
+import clickupLogo from "@/assets/logos/clickup-logo.png";
+import kommoLogo from "@/assets/logos/kommo-logo.png";
+import googleAnalyticsLogo from "@/assets/logos/google-analytics-logo.png";
 const CertificationsSection = () => {
   const certifications = [{
     name: "Google Partner",
     description: "Certificação oficial Google Ads",
-    icon: "🏆",
+    logo: googleAdsLogo,
     verified: true
   }, {
     name: "RD Station",
     description: "Parceiro oficial de automação",
-    icon: "🚀",
+    logo: rdstationLogo,
     verified: true
   }, {
     name: "Active Campaign",
     description: "Especialista em email marketing",
-    icon: "📧",
+    logo: activecampaignLogo,
     verified: true
   }, {
     name: "Meta Business",
     description: "Certificado Facebook & Instagram",
-    icon: "📱",
+    logo: metaLogo,
     verified: true
   }];
   const tools = [{
     name: "ClickUp",
     category: "Gestão de Projetos",
-    logo: "🎯"
+    logo: clickupLogo
   }, {
     name: "Kommo CRM",
     category: "Gestão de Vendas",
-    logo: "💼"
+    logo: kommoLogo
   }, {
     name: "Google Analytics",
     category: "Análise de Dados",
-    logo: "📊"
+    logo: googleAnalyticsLogo
   }, {
     name: "Hotmart",
     category: "Produtos Digitais",
@@ -76,7 +85,9 @@ const CertificationsSection = () => {
                 </div>}
               
               <CardContent className="p-6">
-                <div className="text-4xl mb-4">{cert.icon}</div>
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mx-auto mb-4 shadow-sm">
+                  <img src={cert.logo} alt={cert.name} className="w-12 h-12 object-contain" />
+                </div>
                 <h3 className="font-bold text-lg text-foreground mb-2">{cert.name}</h3>
                 <p className="text-sm text-muted-foreground">{cert.description}</p>
               </CardContent>
@@ -96,7 +107,13 @@ const CertificationsSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {tools.map((tool, index) => <Card key={index} className="text-center group hover:shadow-md transition-all duration-300 border border-border/50 hover:border-primary/20">
                 <CardContent className="p-4">
-                  <div className="text-2xl mb-2">{tool.logo}</div>
+                  <div className="w-8 h-8 bg-white rounded flex items-center justify-center mx-auto mb-2">
+                    {typeof tool.logo === 'string' && tool.logo.length === 2 ? (
+                      <span className="text-lg">{tool.logo}</span>
+                    ) : (
+                      <img src={tool.logo} alt={tool.name} className="w-6 h-6 object-contain" />
+                    )}
+                  </div>
                   <h4 className="font-semibold text-sm text-foreground mb-1">{tool.name}</h4>
                   <p className="text-xs text-muted-foreground">{tool.category}</p>
                 </CardContent>

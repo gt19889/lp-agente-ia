@@ -15,7 +15,7 @@ const CTASection = () => {
   });
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const whatsappMessage = `Olá! Gostaria de agendar uma consultoria gratuita.%0A%0ANome: ${formData.name}%0AEmail: ${formData.email}%0ATelefone: ${formData.phone}%0AEmpresa: ${formData.company}%0AMensagem: ${formData.message}`;
+    const whatsappMessage = `Olá! Gostaria de agendar uma consultoria gratuita.%0A%0ANome: ${formData.name}%0AEmail: ${formData.email}%0ATelefone: ${formData.phone}%0AEmpresa: ${formData.company}%0AMensagem: ${formData.message}%0A%0APor favor, encaminhe para: contato@gtgestaodigital.com.br`;
     window.open(`https://wa.me/553171547107?text=${whatsappMessage}`, '_blank');
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -116,7 +116,7 @@ const CTASection = () => {
               </div>
               <CardTitle className="text-2xl">Agendar Consultoria Gratuita</CardTitle>
               <CardDescription>
-                Preencha o formulário e entraremos em contato em até 2 horas
+                Preencha o formulário abaixo para agendar sua consultoria
               </CardDescription>
             </CardHeader>
             

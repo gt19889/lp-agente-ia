@@ -107,25 +107,6 @@ const TestimonialsSection = () => {
             </Card>)}
         </div>
 
-        {/* Social Proof */}
-        <div className="bg-card rounded-2xl p-8 text-center border border-border/50">
-          <h3 className="text-2xl font-bold text-foreground mb-4">
-            Junte-se aos nossos clientes satisfeitos
-          </h3>
-          <p className="text-muted-foreground mb-6">
-            Mais de 200 empresas já confiaram na GT Gestão Digital para acelerar seus resultados. 
-            Seja a próxima história de sucesso!
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-3 rounded-lg font-medium transition-colors" onClick={() => window.open('https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20agente%20de%20IA.', '_blank')}>
-              Quero Meus Resultados Também
-            </button>
-            <button className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-lg font-medium transition-all" onClick={() => window.open('https://www.google.com/search?q=gt+gestao+digital+avaliacoes', '_blank')}>
-              Ver Todas as Avaliações
-            </button>
-          </div>
-        </div>
       </div>
     </section>;
 };
