@@ -6,10 +6,13 @@ import { CheckCircle, Award, Shield, Zap } from "lucide-react";
 import googleAdsLogo from "@/assets/logos/google-ads-logo.png";
 import rdstationLogo from "@/assets/logos/rdstation-logo.png";
 import activecampaignLogo from "@/assets/logos/activecampaign-logo.png";
-import metaLogo from "@/assets/logos/meta-logo.png";
+import metaAdsLogo from "@/assets/logos/meta-ads-logo.png";
 import clickupLogo from "@/assets/logos/clickup-logo.png";
 import kommoLogo from "@/assets/logos/kommo-logo.png";
 import googleAnalyticsLogo from "@/assets/logos/google-analytics-logo.png";
+import zapierLogo from "@/assets/logos/zapier-logo.png";
+import whatsappLogo from "@/assets/logos/whatsapp-logo.png";
+import hotmartLogo from "@/assets/logos/hotmart-logo.png";
 const CertificationsSection = () => {
   const certifications = [{
     name: "Google Partner",
@@ -27,9 +30,9 @@ const CertificationsSection = () => {
     logo: activecampaignLogo,
     verified: true
   }, {
-    name: "Meta Business",
+    name: "Meta Ads",
     description: "Certificado Facebook & Instagram",
-    logo: metaLogo,
+    logo: metaAdsLogo,
     verified: true
   }];
   const tools = [{
@@ -47,15 +50,15 @@ const CertificationsSection = () => {
   }, {
     name: "Hotmart",
     category: "Produtos Digitais",
-    logo: "🔥"
+    logo: hotmartLogo
   }, {
     name: "Zapier",
     category: "Automação",
-    logo: "⚡"
+    logo: zapierLogo
   }, {
     name: "WhatsApp Business",
     category: "Comunicação",
-    logo: "💬"
+    logo: whatsappLogo
   }];
   const securityFeatures = ["Dados protegidos com criptografia SSL", "Conformidade com LGPD", "Backups automáticos diários", "Monitoramento 24/7"];
   return <section className="py-20 bg-background">
@@ -108,11 +111,7 @@ const CertificationsSection = () => {
             {tools.map((tool, index) => <Card key={index} className="text-center group hover:shadow-md transition-all duration-300 border border-border/50 hover:border-primary/20">
                 <CardContent className="p-4">
                   <div className="w-8 h-8 bg-white rounded flex items-center justify-center mx-auto mb-2">
-                    {typeof tool.logo === 'string' && tool.logo.length === 2 ? (
-                      <span className="text-lg">{tool.logo}</span>
-                    ) : (
-                      <img src={tool.logo} alt={tool.name} className="w-6 h-6 object-contain" />
-                    )}
+                    <img src={tool.logo} alt={tool.name} className="w-6 h-6 object-contain" />
                   </div>
                   <h4 className="font-semibold text-sm text-foreground mb-1">{tool.name}</h4>
                   <p className="text-xs text-muted-foreground">{tool.category}</p>
