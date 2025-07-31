@@ -60,7 +60,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-white transition-colors"
                 >
-                  WhatsApp - Atendimento Direto
+                  31 98400-5700
                 </a>
               </div>
               
