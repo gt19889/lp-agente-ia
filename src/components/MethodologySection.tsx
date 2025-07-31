@@ -87,7 +87,7 @@ const MethodologySection = () => {
                   
                   {/* AI Feature Badge */}
                   <div className="bg-primary/10 text-primary px-3 py-2 rounded-full text-sm font-medium">
-                    {step.aiFeature}
+                    {step.number === "01" ? "IA faz a pré-venda" : step.aiFeature}
                   </div>
                 </CardContent>
                 
